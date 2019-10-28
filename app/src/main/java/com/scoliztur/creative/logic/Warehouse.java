@@ -17,7 +17,6 @@ public class Warehouse {
     public void removeValue(String ingredient, int taken) {
         int takenAway = ingredientValue.get(ingredient) - taken;
 
-        System.out.println(takenAway);
         ingredientValue.put(ingredient, takenAway);
     }
 
