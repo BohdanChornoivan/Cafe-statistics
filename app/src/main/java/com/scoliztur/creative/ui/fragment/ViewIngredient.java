@@ -1,4 +1,4 @@
-package com.scoliztur.creative.presenter;
+package com.scoliztur.creative.ui.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;

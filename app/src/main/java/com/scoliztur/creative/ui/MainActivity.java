@@ -1,4 +1,4 @@
-package com.scoliztur.creative;
+package com.scoliztur.creative.ui;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -7,7 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.scoliztur.creative.presenter.ViewIngredient;
+import com.scoliztur.creative.R;
+import com.scoliztur.creative.ui.fragment.ViewIngredient;
 
 public class MainActivity extends AppCompatActivity {
 
