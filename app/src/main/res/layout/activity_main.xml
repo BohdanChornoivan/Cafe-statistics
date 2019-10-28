@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/add_ingredient" />
+
+    <Button
+        android:id="@+id/add_ingredient"
+        android:layout_width="280dp"
+        android:layout_height="120dp"
+        android:textSize="35sp"
+        android:text="@string/add_ingredient"
+        android:textColor="@color/colorText"
+        android:layout_marginTop="350dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="350dp"
+        android:layout_height="90dp"
+        android:textSize="30sp"
+        android:text="@string/view_ingredient"
+        android:textColor="@color/colorText"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_ingredient"
+        />
+
+    <fragment
+        android:name="com.scoliztur.creative.presenter.ViewIngredient"
+        android:id="@+id/view_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </fragment>
+
+</android.support.constraint.ConstraintLayout>
