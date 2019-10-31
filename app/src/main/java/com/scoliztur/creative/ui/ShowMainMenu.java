@@ -2,23 +2,33 @@ package com.scoliztur.creative.ui;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 import com.scoliztur.creative.R;
-import com.scoliztur.creative.ui.fragment.ViewIngredient;
+import com.scoliztur.creative.data.ControlLogic;
+import com.scoliztur.creative.logic.Warehouse;
+
+import java.util.HashMap;
 
 public class ShowMainMenu extends AppCompatActivity {
+
+    private ControlLogic controlLogic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        controlLogic();
+    }
+
+    private void controlLogic() {
+        controlLogic = new ControlLogic();
+        controlLogic.ingredientValue = new HashMap<>();
+        controlLogic.recipeData = new HashMap<>();
+        controlLogic.warehouse = new Warehouse(controlLogic.ingredientValue);
     }
 
 

@@ -1,4 +1,8 @@
-package com.scoliztur.creative.logic;
+package com.scoliztur.creative.logic.cook;
+
+import com.scoliztur.creative.logic.Ingredient;
+import com.scoliztur.creative.logic.Recipe;
+import com.scoliztur.creative.logic.Warehouse;
 
 import java.util.Map;
 

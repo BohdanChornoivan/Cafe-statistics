@@ -11,7 +11,7 @@ public class Ingredient {
         this.number = number;
     }
 
-    String getName() {
+    public String getName() {
         return name;
     }
 

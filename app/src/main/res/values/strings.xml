@@ -5,4 +5,8 @@
     <string name="your_ingredients">Ingredients</string>
     <string name="your_goods">Goods</string>
     <string name="your_costs">Costs</string>
+    <string name="change">Change</string>
+    <string name="enterBalance">Enter your balance</string>
+    <string name="confirm">Confirm</string>
+    <string name="missing">Missing</string>
 </resources>
