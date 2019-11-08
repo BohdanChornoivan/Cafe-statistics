@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorGray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/your_balance"
+        android:typeface="serif"
+        android:textSize="65sp"
+        android:textColor="@color/colorBlue"/>
+
+    <TextView
+        android:id="@+id/textView_balance"
+        android:layout_marginTop="140dp"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:typeface="serif"
+        android:textSize="30sp"
+        android:hint="@string/missing"
+        android:textColor="@color/colorBlue"
+        android:gravity="top|center" />
+
+    <EditText
+        android:id="@+id/editText_balance"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="@string/enterBalance"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:textColor="@color/colorBlue"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/bottom_confirm"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/bottom_change"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change"
+        android:textColor="@color/colorRed"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

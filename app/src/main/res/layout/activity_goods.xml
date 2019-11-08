@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorGray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:text="@string/your_goods"
+        android:textColor="@color/colorBlue"
+        android:textSize="65sp"
+        android:typeface="serif" />
+
+
+    <ScrollView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <LinearLayout
+            android:id="@+id/ScLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_marginTop="50dp"
+        android:id="@+id/editText_goods"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="@string/enterBalance"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorBlue"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/bottom_confirm"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        android:onClick="ClickConfirm"
+        android:textSize="30sp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/add_good"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change"
+        android:textColor="@color/colorRed"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
