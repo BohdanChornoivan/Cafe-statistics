@@ -13,10 +13,11 @@
         android:gravity="center"
         tools:ignore="UselessParent">
 
-        <Button
-            android:id="@+id/btm_select"
+        <TextView
+            android:id="@+id/view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="20sp"/>
+
     </RelativeLayout>
 </RelativeLayout>

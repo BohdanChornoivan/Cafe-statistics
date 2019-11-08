@@ -19,7 +19,7 @@
     <ScrollView
         android:layout_marginTop="40dp"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="300dp"
         android:background="@color/colorWhite">
 
         <LinearLayout
@@ -29,17 +29,36 @@
             android:orientation="vertical">
         </LinearLayout>
     </ScrollView>
-    <!--<fragment-->
-        <!--android:id="@+id/fragment"-->
-        <!--android:name="com.scoliztur.creative.ui.fragment.ViewIngredient"-->
-        <!--android:layout_marginTop="40dp"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="400dp">-->
-    <!--</fragment>-->
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/editText_ingredient"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="@string/enterBalance"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorBlue"
+        android:inputType="text" />
 
     <Button
-        android:layout_marginTop="40dp"
+        android:id="@+id/bottom_confirm"
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        android:onClick="ClickConfirm"
+        android:textSize="30sp"
         android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/add_ingredient"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change"
+        android:textColor="@color/colorRed"
+        android:layout_gravity="center"/>
+
 </LinearLayout>
